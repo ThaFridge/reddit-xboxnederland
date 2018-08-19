@@ -1,0 +1,3 @@
+# gitignore r/xboxnederland
+/node_modules*
+/css*
