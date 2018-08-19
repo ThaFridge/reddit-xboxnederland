@@ -1,0 +1,363 @@
+.submit-page {
+	.submit.content {
+		margin: 30px;
+		box-shadow: none;
+	}
+	.content > h1 {
+		background-color: #FFF;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: capitalize;
+		padding-top: 20px;
+		padding-bottom: 18px ;
+	}
+	.side .titlebox {
+		margin-top: 0;
+	}
+	.formtabs-content {
+		border-top: none;
+		margin: auto;
+        &:before {
+            background: #f2dede;
+            color: #a94442;
+            border: 1px solid #ebcccc;
+            content: "IMPORTANT: Asking a question? Please make sure you have read the FAQ and used Reddit's search feature before posting your question. There's a very high chance it's already been answered and doing this will likely prevent others becoming from frustrated by duplicate submissions. Asking questions that have already been answered is also grounds for the removal of your submission!";
+            display: block;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+	}
+	#newlink {
+		& > ul {
+		text-align: center;
+			box-shadow: $shadow;
+			visibility: hidden;
+			li {
+				visibility: visible;
+			}
+		}
+		& > div.spacer {
+			text-align: center;
+			padding-left: 6px;
+			& > button {
+        		width: 522px;
+        		box-shadow: 0 0.5px 2.75px 0.25px rgba(0,0,0,0.2);
+        		margin-bottom: 25px;
+        	}
+		}
+	}
+    .tabmenu li a {
+    	padding-left: 117px !important;
+        padding-right: 117px !important;
+        background-color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #DDD;
+        &:hover {
+            color: $purple;
+        }
+    }
+	ul.tabmenu.formtab {
+		padding-left: 0;
+		font-size: 12px;
+		margin: 15px 0 10px;
+		li {
+            &.selected a {
+                background-color: $purple;
+                box-shadow: -0.25px 0 2.75px 0.25px rgba(0,0,0,0.2) !important;
+                padding-left: 117px;
+                padding-right: 117px;
+                &:hover {
+                    color: white;
+                    background-color: lighten($purple, 10%);
+                }
+            }
+			a {
+				border: none;
+				box-shadow: 1px 0 2.7px 0.12px rgba(0,0,0,.2);
+				padding: 9px 15px;
+                letter-spacing: 0;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			&.selected a {
+				font-size: 100%;
+			}
+		}
+	}
+	.infobar {
+		background: #eee;
+		border: 1px solid #E2E2E2;
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	#url-field.roundfield .title {
+		text-transform: uppercase;
+	}
+	.roundfield {
+		background: white;
+		box-shadow: $shadow;
+		padding: 20px;
+		box-sizing: border-box;
+		width: 100%;
+		border-radius: 0;
+		.usertext-edit, .markdownEditor-wrapper {
+			width: 100%;
+		}
+		&.info-notice {
+			margin: auto;
+			background: white;
+			box-shadow: $shadow;
+			border: none;
+			padding: 20px;
+			font-size: 12px;
+			max-width: 520px;
+			border-radius: 0;
+			&:first-letter {
+				text-transform: capitalize;
+			}
+		}
+		textarea, input {
+			width: 100%;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			&[type="checkbox"] {
+				width: auto;
+			}
+		}
+	}
+	#items-required {
+		display: none;
+	}
+	#newlink-with-image-upload > div:nth-child(2) {
+		margin: 15px 0;
+	}
+}
+
+// RES
+.RESDialogSmall.livePreview {
+	margin-top: 20px;
+}
+
+.content.submit .info-notice, .formtabs-content .infobar {
+  background: 0 0;
+  border: 0;
+  font-size: 0;
+}
+
+.submit-page .content > h1, div#reddit-field {
+  display: none;
+}
+
+.submit-page {
+  .titlebox h6:nth-of-type(1) del strong {
+    display: none;
+  }
+  .side .md {
+    table:last-of-type, h5, h6, p:nth-child(28) a {
+      display: none;
+    }
+  }
+  .titlebox a[href$="/news"] {
+    display: none;
+  }
+  #newlink.submit.content ul.tabmenu.formtab {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: #c8c9ca;
+  }
+  .formtabs-content {
+    border: none;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #newlink.submit.content {
+    background: #fff;
+    margin: 110px 20px 20px;
+    border-color: #c8c9ca;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid !important;
+    .tabmenu.formtab {
+      a {
+        padding: 16px;
+        display: inline-block;
+        text-align: center;
+        background-color: #c8c9ca;
+        color: #545454;
+        text-transform: capitalize;
+        font-weight: 700;
+        transition: all .25s ease;
+        font-size: 16px;
+        width: 50%;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 10px 10px 0 0;
+        text-decoration: none;
+        &:hover {
+          padding: 16px;
+          display: inline-block;
+          text-align: center;
+          background-color: #c8c9ca;
+          color: #545454;
+          text-transform: capitalize;
+          font-weight: 700;
+          transition: all .25s ease;
+          font-size: 16px;
+          width: 50%;
+          box-sizing: border-box;
+          border: none;
+          border-radius: 10px 10px 0 0;
+          text-decoration: none;
+        }
+      }
+      .selected a {
+        background-color: #fff;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  }
+}
+
+form .spacer + .spacer {
+  margin: 15px 0;
+}
+
+.content.submit .roundfield.info-notice, .linefield {
+  background: 0 0 !important;
+}
+
+.res-nightmode {
+  .content {
+    .roundfield, &.submit .roundfield {
+      background: 0 0 !important;
+    }
+  }
+  .infobar:not(.newsletterbar) {
+    background: 0 0 !important;
+  }
+}
+
+.roundfield {
+  background: 0 0 !important;
+  width: 550px;
+  padding: 5px 10px 10px;
+  font-size: large;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-page {
+  .formtabs-content {
+    margin: 0 auto;
+  }
+  #newlink.submit.content .btn {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: #761fa1;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    padding: 9px 15px;
+    transition: background-color .2s;
+    outline: none;
+    cursor: pointer;
+    min-width: 70px;
+    max-width: 300px;
+  }
+}
+
+.formtabs-content {
+  border: 0;
+  width: 520px;
+  padding-top: 10px;
+  > div:first-of-type {
+    height: 50px;
+  }
+}
+
+.linefield .title, .roundfield, .submit_text h1 {
+  color: #761fa1 !important;
+  text-transform: capitalize;
+}
+
+.usertext {
+  .help-toggle a, a.reddiquette {
+    color: #761fa1 !important;
+    text-transform: capitalize;
+  }
+}
+
+.required-roundfield:before {
+  color: #761fa1 !important;
+  text-transform: capitalize;
+}
+
+.little {
+  font-size: smaller;
+}
+
+.roundfield {
+  label, p {
+    font-size: smaller;
+  }
+}
+
+.submit_text {
+  &.enabled {
+    position: absolute;
+    display: inline-block;
+    top: 440px;
+  }
+  h1 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .content {
+    margin: 0;
+    p {
+      margin: 0 2px;
+    }
+  }
+}
+
+.submit-page {
+  div.content {
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 2.75px 0.25px rgba(0, 0, 0, 0.2);
+  }
+  table {
+    margin-top: 15px;
+    a[href*="#tag-"] {
+      background-position: right 2px center;
+      color: #761fa1;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 17px;
+      height: 17px;
+      padding: 2px 8px;
+      text-decoration: none;
+      border: 1px solid #EEE;
+      background-color: #fdfdfd;
+      border-left: 4px solid #761fa1;
+    }
+    th {
+      font-size: 0;
+      padding: 5px;
+      border: 0;
+      vertical-align: top;
+    }
+    a:hover {
+      background-color: #f6f6f6;
+    }
+  }
+}

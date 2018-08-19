@@ -1,0 +1,232 @@
+@keyframes flicker {
+  0.0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  7% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  7.5% {
+    transform: translateX(-1px);
+    opacity: .75;
+  }
+
+  7.75% {
+    transform: translateX(2px);
+    opacity: .65;
+  }
+
+  8.0% {
+    transform: translateX(1px);
+    opacity: 1;
+  }
+
+  8.25% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  8.5% {
+    transform: translateX(-2px);
+    opacity: .5;
+  }
+
+  8.75% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  10.25% {
+    opacity: 1;
+  }
+
+  10.5% {
+    opacity: .75;
+  }
+
+  100%,10.75% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideBox {
+  0% {
+    margin-top: 0;
+  }
+
+  8% {
+    margin-top: 0;
+  }
+
+  17% {
+    margin-top: -50px;
+  }
+
+  24% {
+    margin-top: -50px;
+  }
+
+  32% {
+    margin-top: -100px;
+  }
+
+  41% {
+    margin-top: -100px;
+  }
+
+  50% {
+    margin-top: -100px;
+  }
+
+  60% {
+    margin-top: -100px;
+  }
+
+  70% {
+    margin-top: -50px;
+  }
+
+  77% {
+    margin-top: -50px;
+  }
+
+  85% {
+    margin-top: -50px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+@keyframes slide-1 {
+  0% {
+    opacity: 1;
+    z-index: 1337;
+  }
+
+  28% {
+    opacity: 1;
+    z-index: 1337;
+  }
+
+  33% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  95% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  100% {
+    opacity: 1;
+    z-index: 1337;
+  }
+}
+
+
+@keyframes slide-2 {
+  0% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  28% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  33.33% {
+    opacity: 1;
+    z-index: 1337;
+  }
+
+  61% {
+    opacity: 1;
+    z-index: 1337;
+  }
+
+  66.66% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+
+@keyframes slide-3 {
+  0% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  61% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  66% {
+    opacity: 1;
+    z-index: 1337;
+  }
+
+  95% {
+    opacity: 1;
+    z-index: 1337;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+
+@keyframes bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+
+  84% {
+    opacity: 1;
+    width: 480px;
+  }
+
+  100% {
+    opacity: 0;
+    width: 480px;
+  }
+}
+
+@keyframes AnimFlairMain {
+  from {
+    background-position-x: 0;
+  }
+
+  to {
+    background-position-x: -1650px;
+  }
+}
+
+
+@keyframes AnimFlairSide {
+  from {
+    background-position-x: 0;
+  }
+
+  to {
+    background-position-x: -775px;
+  }
+}

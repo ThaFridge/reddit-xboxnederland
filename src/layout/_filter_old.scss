@@ -1,0 +1,191 @@
+.side {
+    .titlebox {
+        margin-top: 84px;
+    }
+
+    .usertext-body > .md {
+        > p {
+            &:nth-of-type(1) {
+                position: absolute;
+                color: $purple;
+                background-color: white;
+                box-shadow: $shadow;
+                border-left: 4px solid $purple;
+                cursor: pointer;
+                margin-top: 26px;
+                top: 420px;
+                right: 20px;
+                width: 300px;
+                max-width: 300px;
+                max-height: 44px;
+                padding: 15px 0;
+                text-transform: uppercase;
+                box-sizing: border-box;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 14px;
+                z-index: 999;
+
+                &:hover ~ ul:nth-of-type(1) {
+                    display: block;
+                }
+            }
+
+            &:nth-of-type(1)::after {
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $purple;
+                content: "";
+                position: absolute;
+                top: 17px;
+                right: 25px;
+            }
+        }
+
+        > ul:nth-of-type(1) {
+            padding: 4px 0;
+            background-color: white;
+            border-left: 4px solid $purple;
+            border-bottom: 0;
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            display: none;
+            position: absolute;
+            list-style-type: none;
+            top: 490px;
+            right: 20px;
+            width: 3000px;
+            max-width: 300px;
+            box-sizing: border-box;
+            z-index: 999;
+
+            > li {
+                background-color: white;
+                margin-bottom: 0;
+                border-bottom: 1px solid $purple;
+                padding: 4px 0;
+                width: 100%;
+
+                &:hover {
+                    background-color: $purple;
+
+                    a {
+                        color: white;
+                    }
+                }
+
+                a {
+                    width: 100%;
+                    display: block;
+                    height: 100%;
+                    padding: 5px 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $purple;
+                    font-weight: bold;
+                }
+            }
+
+            &:hover {
+                display: block;
+            }
+        }
+    }
+}
+
+html {
+    &:lang(ds) {
+        .link:not(.linkflair-discussion) {
+            display: none;
+        }
+
+        .side .usertext-body > .md > ul:nth-of-type(1) > li:nth-of-type(2) {
+            background-color: $purple;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    &:lang(ep) {
+        .link:not(.linkflair-epic-answered):not(.linkflair-official) {
+            display: none;
+        }
+
+        .side .usertext-body > .md > ul:nth-of-type(1) > li:nth-of-type(3) {
+            background-color: $purple;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    &:lang(qs) {
+        .link:not(.linkflair-question) {
+            display: none;
+        }
+
+        .side .usertext-body > .md > ul:nth-of-type(1) > li:nth-of-type(4) {
+            background-color: $purple;
+
+            a {
+                color: white;
+            }
+        }
+    }
+
+    &:lang(en) .side .usertext-body > .md > ul:nth-of-type(1) > li:nth-of-type(1) {
+        background-color: $purple;
+
+        a {
+            color: white;
+        }
+    }
+
+    &:not([lang='en']) .side .usertext-body > .md > ul:nth-of-type(1) > li:nth-of-type(1) {
+        border-top: 1px solid $purple;
+    }
+}
+
+.comments-page {
+    .side {
+        .titlebox {
+            margin-top: 20px;
+        }
+
+        .usertext-body > .md {
+            > p {
+                &:nth-of-type(1) {
+                    display: none;
+                }
+            }
+
+            > ul:nth-of-type(1) {
+                display: none;
+            }
+        }
+    }
+}
+
+body:not(.loggedin) {
+    .side {
+        .usertext-body > .md {
+            > p {
+                &:nth-of-type(1) {
+                    top: 562px;
+                }
+            }
+
+            > ul:nth-of-type(1) {
+                top: 632px;
+            }
+        }
+    }
+}

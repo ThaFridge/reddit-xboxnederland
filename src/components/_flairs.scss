@@ -1,0 +1,518 @@
+.thumbnail.self {
+  background-image: url(%%flair-icons%%);
+  background-position: 0 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+.linkflair-epic-answered .linkflairlabel, .linkflairlabel, .search-page .linkflairlabel {
+  padding: 4px 4px 3px;
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  background: #761fa1;
+  border: none;
+  border-radius: 0;
+  position: relative;
+  top: 2px;
+  letter-spacing: 1px;
+}
+
+.linkflair-epic-answered .linkflairlabel:hover, .linkflair-devbug .linkflairlabel:hover, .linkflair-devdiscussion .linkflairlabel:hover, .linkflair-devhelp .linkflairlabel:hover, .linkflair-devmedia .linkflairlabel:hover, .linkflair-devcreative .linkflairlabel:hover, .linkflair-devsuggestion .linkflairlabel:hover, .linkflair-devstreamer .linkflairlabel:hover, .linkflair-devhumor.linkflairlabel:hover, .linkflairlabel:hover {
+  background: #9527cc;
+}
+
+.linkflair-official {
+  background: #fff url(%%epic-linkflair%%) center right no-repeat !important;
+  .linkflairlabel {
+    background: #000;
+  }
+  .thumbnail {
+    background-position: 0 -100px;
+  }
+  &:before {
+    color: #000;
+    opacity: 1 !important;
+  }
+}
+
+.linkflair-announcement {
+  .linkflairlabel {
+    background: #761fa1;
+    &:hover {
+      background: #bf75e4;
+    }
+  }
+  &:before {
+    color: #761fa1;
+    opacity: 1 !important;
+  }
+}
+
+.linkflair-epic-answered .linkflairlabel, .linkflair-devbug .linkflairlabel, .linkflair-devdiscussion .linkflairlabel, .linkflair-devhelp .linkflairlabel, .linkflair-devmedia .linkflairlabel, .linkflair-devcreative .linkflairlabel, .linkflair-devsuggestion .linkflairlabel, .linkflair-devstreamer .linkflairlabel, .linkflair-devhumor.linkflairlabel {
+  background: #000;
+}
+
+.linkflair-epic-answered .linkflairlabel:hover, .linkflair-devbug .linkflairlabel:hover, .linkflair-devdiscussion .linkflairlabel:hover, .linkflair-devhelp .linkflairlabel:hover, .linkflair-devmedia .linkflairlabel:hover, .linkflair-devcreative .linkflairlabel:hover, .linkflair-devsuggestion .linkflairlabel:hover, .linkflair-devstreamer .linkflairlabel:hover, .linkflair-devhumor.linkflairlabel:hover {
+  background: #4d4d4d;
+}
+
+.linkflair-epic-answered:before, .linkflair-devbug:before, .linkflair-devdiscussion:before, .linkflair-devhelp:before, .linkflair-devmedia:before, .linkflair-devcreative:before, .linkflair-devsuggestion:before, .linkflair-devstreamer:before, .linkflair-devhumor:before {
+  color: #000;
+  opacity: 1 !important;
+}
+
+.linkflair-discussion {
+  .linkflairlabel {
+    background: #761fa1;
+    &:hover {
+      background: #bf75e4;
+    }
+  }
+  .thumbnail {
+    background-position: 0 -50px;
+  }
+}
+
+.linkflair-devdiscussion .thumbnail {
+  background-position: 0 -50px;
+}
+
+.linkflair-discussion:before {
+  color: #761fa1;
+  opacity: 1 !important;
+}
+
+.linkflair-bug {
+  .linkflairlabel {
+    background: #761fa1;
+    &:hover {
+      background: #bf75e4;
+    }
+  }
+  .thumbnail {
+    background-position: 0 -200px;
+  }
+  &:before {
+    color: #761fa1;
+    opacity: 1 !important;
+  }
+}
+
+.linkflair-help {
+  .linkflairlabel {
+    background: #761fa1;
+    &:hover {
+      background: #bf75e4;
+    }
+  }
+  .thumbnail {
+    background-position: 0 -153px;
+  }
+  &:before {
+    color: #761fa1;
+    opacity: 1 !important;
+  }
+}
+
+.linkflair-streamer .linkflairlabel, .linkflair-media .linkflairlabel {
+  background: #761fa1;
+}
+
+.linkflair-streamer .linkflairlabel:hover, .linkflair-media .linkflairlabel:hover {
+  background: #bf75e4;
+}
+
+.linkflair-streamer .thumbnail, .linkflair-media .thumbnail, .linkflair-devstreamer .thumbnail, .linkflair-devmedia .thumbnail {
+  background-position: 0 -250px;
+}
+
+.linkflair-streamer:before, .linkflair-media:before {
+  color: #761fa1;
+  opacity: 1 !important;
+}
+
+.linkflair-creative {
+  .linkflairlabel {
+    background: #761fa1;
+    &:hover {
+      background: #bf75e4;
+    }
+  }
+  .thumbnail {
+    background-position: 0 -350px;
+  }
+}
+
+.linkflair-devcreative .thumbnail {
+  background-position: 0 -350px;
+}
+
+.linkflair-creative:before {
+  color: #761fa1;
+  opacity: 1 !important;
+}
+
+.linkflair-suggestion {
+  .linkflairlabel {
+    background: #761fa1;
+    &:hover {
+      background: #bf75e4;
+    }
+  }
+  .thumbnail {
+    background-position: 0 -400px;
+  }
+}
+
+.linkflair-devsuggestion .thumbnail {
+  background-position: 0 -400px;
+}
+
+.linkflair-suggestion:before {
+  color: #761fa1;
+  opacity: 1 !important;
+}
+
+.linkflair-humor {
+  .linkflairlabel {
+    background: #761fa1;
+    &:hover {
+      background: #bf75e4;
+    }
+  }
+  .thumbnail {
+    background-position: 0 -500px;
+  }
+}
+
+.linkflair-devhumor .thumbnail {
+  background-position: 0 -500px;
+}
+
+.linkflair-humor:before {
+  color: #761fa1;
+  opacity: 1 !important;
+}
+
+.md {
+  [href^="#"] {
+    position: relative;
+    top: 4px;
+    background: url(%%emotes%%);
+    background-size: 100%;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    margin-right: .3em;
+    pointer-events: none;
+  }
+  [href="#rip"] {
+    background-position: 0 0;
+  }
+}
+
+a.author {
+  &[href$="/NickDonaldson"], &[href$="/maury_mountain"], &[href$="/Magyst"], &[href$="/raczilla"], &[href$="/S-LG"], &[href$="/JustMooney1"], &[href$="/Chris_Attalus"], &[href$="/iFlak"], &[href$="/inuswetrust1"], &[href$="/hofftv"], &[href$="/ZooKeeperZak"], &[href$="/ConstantDesigner"], &[href$="/EpicTense"], &[href$="/EpicEricSW"], &[href$="/EPIC_Tokaj"], &[href$="/InUsWeTrust1"], &[href$="/arctyczyn"], &[href$="/MichaelNoland"], &[href$="/MrPopoTFS"], &[href$="/AfroDeezyShak"], &[href$="/Epic_Joel"], &[href$="/DanDaDaDanDan"], &[href$="/spazinski"], &[href$="/EpicPente"], &[href$="/RZELive"], &[href$="/darkveil"], &[href$="/sweedinmusic"], &[href$="/MythicBasil"], &[href$="/EpicCodyB"], &[href$="/AaronAtEpic"], &[href$="/Shank_TheTank"], &[href$="/EpicLoomin"], &[href$="/kyle-dev-epic"], &[href$="/EpicCodyB"], &[href$="/arctyczyn"], &[href$="/ModernRyoga"], &[href$="/EpicLittleGiant"], &[href$="/EPICMidnightblu"], &[href$="/Nythanos"], &[href$="/puzzle3-14"], &[href$="/ModernRyoga"], &[href$="/Badher0"], &[href$="/SkribblrPrsn"], &[href$="/EPIC_Clintonious"], &[href$="/206inthe919"], &[href$="/mastergoatdev"] {
+    display: inline-block;
+    margin-right: .5em;
+    padding: 1px;
+    background: #add8e6;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: x-small;
+    margin-top: -1px;
+  }
+}
+
+body:not(.moderator) .flairselector {
+  .linkflair-official, .linkflair-epic-answered, .linkflair-devbug, .linkflair-devdiscussion, .linkflair-devhelp, .linkflair-devmedia, .linkflair-devcreative, .linkflair-devsuggestion, .linkflair-devstreamer, .linkflair-devhumor {
+    display: none;
+  }
+}
+
+a {
+  &[href$="user/dillwillhill"]:before, &[href$="user/ImTheMyth"]:before, &[href$="user/Drift0r"]:before, &[href$="user/Lachlan_"]:before, &[href$="user/tripleWRECK"]:before, &[href$="user/tazzgonzo"]:before {
+    content: url("%%verified%%");
+    position: relative;
+    right: -4px;
+    bottom: -4px;
+    margin-right: 8px;
+  }
+}
+
+.comment .entry {
+  margin-left: 100px;
+}
+
+.userattrs {
+  visibility: visible !important;
+  &:before {
+    content: '';
+    text-indent: -9999px;
+    overflow: hidden;
+    position: absolute;
+    left: 50px;
+    top: 16px;
+    width: 50px;
+    height: 50px;
+    background: url(%%flairs%%);
+    background-position: 0 0;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+  }
+}
+
+.flair {
+  + .userattrs:before {
+    content: "";
+    display: none;
+  }
+  z-index: 5;
+  text-indent: -9999px;
+  overflow: hidden;
+  position: absolute;
+  left: 50px;
+  top: 16px;
+  width: 50px;
+  height: 50px;
+  background: url(%%flairs%%);
+  background-position: 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+}
+
+.flair-default {
+  background-position: 0 0;
+}
+
+.flair-epic {
+  background-position: -50px 0;
+}
+
+.flair-hero-support-specialist {
+  background-position: -100px 0;
+}
+
+.flair-hero-special-forces {
+  background-position: -150px 0;
+}
+
+.flair-hero-centurion {
+  background-position: -200px 0;
+}
+
+.flair-hero-warlord {
+  background-position: -250px 0;
+}
+
+.flair-hero-commando {
+  background-position: -300px 0;
+}
+
+.flair-hero-rescue-trooper {
+  background-position: -350px 0;
+}
+
+.flair-hero-urban-assault {
+  background-position: -400px 0;
+}
+
+.flair-hero-survivalist {
+  background-position: -450px 0;
+}
+
+.flair-hero-shock-trooper {
+  background-position: 0 -50px;
+}
+
+.flair-hero-master-grenadier {
+  background-position: -50px -50px;
+}
+
+.flair-hero-controller {
+  background-position: -100px -50px;
+}
+
+.flair-hero-power-base {
+  background-position: -150px -50px;
+}
+
+.flair-hero-plasma-sentinel {
+  background-position: -200px -50px;
+}
+
+.flair-hero-kinetic-guardian {
+  background-position: -250px -50px;
+}
+
+.flair-hero-hotfixer {
+  background-position: -300px -50px;
+}
+
+.flair-hero-electro-pulse {
+  background-position: -350px -50px;
+}
+
+.flair-hero-tank {
+  background-position: -400px -50px;
+}
+
+.flair-hero-plasma-shielder {
+  background-position: -450px -50px;
+}
+
+.flair-hero-base {
+  background-position: 0 -100px;
+}
+
+.flair-hero-megabase {
+  background-position: -50px -100px;
+}
+
+.flair-hero-brawler {
+  background-position: -100px -100px;
+}
+
+.flair-hero-stonefoot {
+  background-position: -150px -100px;
+}
+
+.flair-hero-skirmisher {
+  background-position: -200px -100px;
+}
+
+.flair-hero-poisoner {
+  background-position: -250px -100px;
+}
+
+.flair-hero-dragon {
+  background-position: -300px -100px;
+}
+
+.flair-hero-fleetfoot {
+  background-position: -350px -100px;
+}
+
+.flair-hero-dim-mak {
+  background-position: -400px -100px;
+}
+
+.flair-hero-assassin {
+  background-position: -450px -100px;
+}
+
+.flair-hero-shuriken-master {
+  background-position: 0 -150px;
+}
+
+.flair-hero-swordmaster {
+  background-position: -50px -150px;
+}
+
+.flair-hero-enforcer {
+  background-position: -100px -150px;
+}
+
+.flair-hero-recon-scout {
+  background-position: -150px -150px;
+}
+
+.flair-hero-vanguard {
+  background-position: -200px -150px;
+}
+
+.flair-hero-striker {
+  background-position: -250px -150px;
+}
+
+.flair-hero-trailblaster {
+  background-position: -300px -150px;
+}
+
+.flair-hero-shock-specialist {
+  background-position: -350px -150px;
+}
+
+.flair-hero-trailblazer {
+  background-position: -400px -150px;
+}
+
+.flair-hero-pathfinder {
+  background-position: -450px -150px;
+}
+
+.flair-hero-ranger {
+  background-position: 0 -200px;
+}
+
+.flair-hero-phase-scout {
+  background-position: -50px -200px;
+}
+
+.flair-llama {
+  background-position: -100px -200px;
+}
+
+.flair-hero-energythief {
+  background-position: -200px -200px;
+}
+
+.flair-hero-dragonsarah {
+  background-position: -250px -200px;
+}
+
+.flair-hero-machinist {
+  background-position: -300px -200px;
+}
+
+.flair-hero-gunblazer {
+  background-position: -350px -200px;
+}
+
+.flair-hero-raider {
+  background-position: -400px -200px;
+}
+
+.flair-hero-catstructor {
+  background-position: -450px -200px;
+}
+
+.flair-hero-hazardkyle {
+  background-position: 0 -250px;
+}
+
+.flair-hero-beetlejess {
+  background-position: -50px -250px;
+}
+
+.flair-hero-marinecorpse {
+  background-position: -100px -250px;
+}
+
+.flair-hero-skullshot {
+  background-position: -150px -250px;
+}
+
+.flair-llamamaster {
+  background-position: -200px -250px;
+}
+
+.flair-shurikenmasternew {
+  background-position: -250px -250px;
+}
+
+.flair-assassinlimited {
+  background-position: -300px -250px;
+}
+
+.flair-assassinnew {
+  background-position: -350px -250px;
+}

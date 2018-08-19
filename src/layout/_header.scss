@@ -1,0 +1,143 @@
+#header {
+    border: none;
+
+    &::before {
+        content: "";
+        z-index: -1;
+        background: #000 url(%%header%%) no-repeat;
+        display: block;
+        background-size: cover !important;
+        background-position: top center;
+        height: $header-height;
+    }
+
+    #header-img.default-header {
+        display: none;
+    }
+
+    #header-img {
+        position: relative;
+        margin-left: 14px;
+        margin-top: -40px;
+        width: 100px;
+        height: auto;
+    }
+}
+
+#sr-header-area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: $purple;
+    color: #cccccc;
+    font-size: 10px;
+    border: none;
+    padding: 3px 0;
+
+    .width-clip {
+        right: 400px;
+    }
+
+    .sr-list {
+        margin-right: 48px;
+    }
+
+    #sr-more-link {
+        color: white;
+        background: none;
+    }
+
+    #srLeftContainer {
+        padding-left: 10px;
+    }
+
+    .dropdown.srdrop {
+        .selected {
+            color: white;
+            margin-right: 0;
+            padding-right: 24px;
+            padding-left: 10px;
+        }
+    }
+
+    .drop-choices {
+    	&.inuse {
+    		display: flex;
+    	}
+
+        a.choice {
+            background-color: $purple;
+            color: white;
+
+            &:hover {
+                background-color: $highlight;
+            }
+        }
+    }
+}
+
+#header-bottom-right {
+    position: absolute;
+    padding: 6px 0;
+    top: 0 !important;
+    right: 10px;
+    width: auto;
+    height: 18px;
+    font-size: 11px;
+    background: none;
+    color: white;
+
+    .user {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &.res-navTop {
+        top: -2px !important;
+    }
+
+    a {
+        color: white;
+    }
+
+    #userbarToggle {
+        top: 0;
+    }
+}
+
+.sr-bar {
+    a {
+        color: #ccc;
+    }
+}
+
+// RES
+.res #RESSubredditGroupDropdown .RESShortcutsCurrentSub a, .res #sr-header-area a.RESShortcutsCurrentSub {
+    color: white !important;
+}
+
+.res #RESShortcutsEditContainer {
+    margin-right: 430px;
+    top: 3px;
+    background: none;
+
+    #RESShortcutsSort, #RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash {
+        background: none;
+        opacity: 0.5;
+        color: white;
+
+        &:hover {
+            opacity: 1.0;
+        }
+    }
+}
+
+.res #RESShortcutsViewport {
+    margin-right: 520px;
+}
+
+.res #userbarToggle {
+    background: none;
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+}

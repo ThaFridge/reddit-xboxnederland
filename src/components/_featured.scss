@@ -1,0 +1,248 @@
+.side hr:last-of-type {
+  display: none;
+}
+
+.titlebox {
+  h6:nth-of-type(1) {
+    display: block;
+    position: absolute;
+    top: 370px;
+    right: 340px;
+    left: 20px;
+    padding: 0 0 0 85px;
+    max-height: 46px;
+    overflow: hidden;
+    background-color: #FFF;
+    color: #666;
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px;
+    box-shadow: 0 0 2.75px 0.25px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    del {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      width: 100%;
+      animation: slideBox 15s infinite ease;
+      strong {
+        display: inline-block;
+        width: 100%;
+        padding: 15px 0;
+      }
+    }
+    a {
+      color: #761fa1;
+    }
+  }
+  a[href$="/news"] {
+    position: absolute;
+    display: block;
+    left: 20px;
+    top: 380px;
+    padding: 0 15px;
+    height: 48px;
+    font-weight: 700;
+    color: #761fa1;
+    line-height: 50px;
+    border-left: 4px solid #761fa1;
+    z-index: 1;
+  }
+}
+
+.side blockquote {
+  &:last-of-type a {
+    z-index: 1337;
+  }
+  li a:hover {
+    border-color: #761fa1;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    list-style-position: inside;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 165px;
+    display: inline-block;
+    &:after {
+      content: " ";
+      z-index: 2000;
+      display: block;
+      position: relative;
+      top: 199px;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      margin-left: -356px;
+      height: 2px;
+      background: #761fa1;
+      animation: bar 10s linear infinite;
+    }
+  }
+  li {
+    a {
+      position: absolute;
+      right: 40px;
+      top: 35px;
+      display: inline-block;
+      width: 480px;
+      height: 165px;
+      padding: 0;
+      margin: 0;
+      background: #000 no-repeat;
+      background-size: contain;
+      background-position: center;
+      border: 1px solid #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition-duration: 0;
+      transition: border 0.31s cubic-bezier(0, 0.74, 0.58, 1);
+    }
+    &:nth-child(1) a {
+      background-image: url(%%featured%%);
+      animation: slide-1 30s infinite;
+    }
+    &:nth-child(2) a {
+      background-image: url(%%featured2%%);
+      animation: slide-2 30s infinite;
+    }
+    &:nth-child(3) a {
+      background-image: url(%%featured3%%);
+      animation: slide-3 30s infinite;
+    }
+  }
+  p {
+    &:nth-child(1) {
+      a {
+        position: absolute;
+        top: 316px !important;
+        left: 315px !important;
+        right: 0 !important;
+        background: none;
+        width: 32px;
+        height: 32px;
+        background: url(%%server%%) no-repeat !important;
+        border-bottom: solid 12px #761fa1;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &:before {
+        content: "";
+        background: #fff;
+        position: absolute;
+        width: 32px;
+        height: 25px;
+        top: 350px;
+        left: 315px;
+        z-index: 1337;
+        opacity: 0;
+        transition: top 0.7s,opacity .3s;
+      }
+      &:after {
+        content: 'Check Server Status';
+        background: #000;
+        background: rgba(255, 255, 255, 0.85);
+        color: #761fa1;
+        border: 1px solid #761fa1;
+        text-transform: uppercase;
+        position: absolute;
+        top: 265px;
+        left: 240px;
+        padding: 10px 20px;
+        z-index: 1337;
+        border-radius: 3px;
+        font-size: 11px;
+        opacity: 0;
+        transition: top 0.3s,opacity .3s;
+      }
+      &:hover {
+        &:before {
+          opacity: 1;
+          top: 320px;
+        }
+        &:after {
+          opacity: 1;
+          top: 255px;
+        }
+      }
+    }
+    &:nth-child(2) {
+      a {
+        position: absolute;
+        top: 316px !important;
+        left: 375px !important;
+        right: 0 !important;
+        background: none;
+        width: 32px;
+        height: 25px;
+        background: url(%%discord%%) no-repeat;
+        border: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &:before {
+        content: 'Join us on Discord for community discussion!';
+        background: #000;
+        background: rgba(255, 255, 255, 0.85);
+        color: #761fa1;
+        border: 1px solid #761fa1;
+        text-transform: uppercase;
+        position: absolute;
+        top: 265px;
+        left: 225px;
+        padding: 10px 20px;
+        z-index: 1337;
+        border-radius: 3px;
+        font-size: 11px;
+        opacity: 0;
+        transition: top 0.3s,opacity .3s;
+      }
+      &:hover:before {
+        opacity: 1;
+        top: 255px;
+      }
+    }
+    &:nth-child(3) {
+      a {
+        position: absolute;
+        top: 316px !important;
+        left: 435px !important;
+        right: 0 !important;
+        background: none;
+        width: 32px;
+        height: 32px;
+        background: url(%%epic%%) no-repeat;
+        background-size: 28px;
+        border: none;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &:before {
+        content: 'Official posts by Epic Games!';
+        background: #000;
+        background: rgba(255, 255, 255, 0.85);
+        color: #761fa1;
+        border: 1px solid #761fa1;
+        text-transform: uppercase;
+        position: absolute;
+        top: 265px;
+        left: 335px;
+        padding: 10px 20px;
+        z-index: 1337;
+        border-radius: 3px;
+        font-size: 11px;
+        opacity: 0;
+        transition: top 0.3s,opacity .3s;
+      }
+      &:hover:before {
+        opacity: 1;
+        top: 255px;
+      }
+    }
+  }
+}

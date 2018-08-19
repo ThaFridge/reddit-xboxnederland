@@ -1,0 +1,7 @@
+//* { box-sizing: border-box; }
+a {
+	transition: color 0.2s;
+	&:hover {
+		text-decoration: underline;
+	}
+}
