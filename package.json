@@ -4,7 +4,9 @@
   "private": true,
   "description": "/r/XboxNederland CSS",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-update": "0.0.2"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "*",
