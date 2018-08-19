@@ -6,11 +6,11 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "*",
+    "gulp": "^3.9.1",
     "gulp-concat": "*",
+    "gulp-concat-css": "*",
     "gulp-csso": "*",
-    "gulp-sass": "*",
-    "gulp-concat-css": "*"
+    "gulp-sass": "*"
   },
   "author": " maintained by /u/MCiLuZiioNz",
   "license": "ISC"
