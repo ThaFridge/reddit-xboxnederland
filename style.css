@@ -9,7 +9,7 @@
 
 /* Sidebar Discord Button */
 
-.side a[href*="https://discord.gg/V8En5ne"] {
+.side a[href*="https://discord.gg/"] {
     background: transparent url(%%discordlogo%%) center center no-repeat!important;
     background-size: 120px!important;
     border-color: #551a8b;
@@ -25,7 +25,7 @@
 	color: transparent!important;
 }
 
-.side a[href*="https://discord.gg/V8En5ne"]:hover {
+.side a[href*="https://discord.gg/"]:hover {
     background: transparent url(%%discordlogo%%) center center no-repeat!important;
     background-size: 170px!important;
     border-color: #7289DA;
