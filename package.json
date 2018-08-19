@@ -1,8 +1,8 @@
 {
-  "name": "fortnitebr",
+  "name": "reddit-xboxnederland",
   "version": "2.5.2",
   "private": true,
-  "description": "/r/FortniteBR CSS",
+  "description": "/r/XboxNederland CSS",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -12,6 +12,6 @@
     "gulp-csso": "*",
     "gulp-sass": "*"
   },
-  "author": " maintained by /u/MCiLuZiioNz",
+  "author": " maintained by Weborigin.nl",
   "license": "ISC"
 }
