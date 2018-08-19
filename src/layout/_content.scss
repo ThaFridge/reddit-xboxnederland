@@ -61,7 +61,7 @@
             visibility: hidden;
 
             .moderator {
-                background: $purple;
+                background: $green;
                 color: white;
                 font-size: 9px;
                 font-weight: bold;
@@ -189,7 +189,7 @@
         text-transform: capitalize;
 
         a {
-            background-color: $purple;
+            background-color: $green;
             color: white;
             font-size: 12px;
             font-weight: normal;
@@ -202,7 +202,7 @@
             border-radius: 0;
 
             &:hover {
-                background-color: lighten($purple, 10%);
+                background-color: lighten($green, 10%);
                 text-decoration: none;
             }
         }
@@ -237,7 +237,7 @@
         }
 
         button {
-            color: $purple;
+            color: $green;
             border: none;
         }
     }
@@ -324,8 +324,8 @@ body {
 
     .NERPageMarker {
         background: white;
-        border-color: $purple;
-        color: $purple;
+        border-color: $green;
+        color: $green;
         border-radius: 0px;
     }
 }
