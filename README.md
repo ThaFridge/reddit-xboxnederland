@@ -1,5 +1,5 @@
-# /r/ForniteBR Subreddit Stylesheet
-/r/FortniteBR Subreddit CSS - Managed by /u/MCiLuZiioNz and /u/MasterGoat
+# /r/XboxNederland Subreddit Stylesheet
+/r/XboxNederland Subreddit CSS - Managed by /u/ThaFridge build uppon on /r/FortNite code
 
 # Forking the Repository
 
@@ -24,7 +24,7 @@ This is not a git tutorial so for more information on how to push changes, look 
 
 # Compiling the SASS
 
-## Requirements 
+## Requirements
 * [NPM (Node Package Manager)](https://docs.npmjs.com/getting-started/installing-node)
 
 ## Installing Dependencies
