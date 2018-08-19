@@ -1,13 +1,6 @@
 # /r/XboxNederland Subreddit Stylesheet
 /r/XboxNederland Subreddit CSS - Managed by /u/ThaFridge build uppon on /r/FortNite code
 
-# Forking the Repository
-
-## Forking
-Simply click the fork button at the top right of the repository to copy this repository into your own to make changes to.
-
-# Cloning your Repository
-
 ## Requirements
 * [Git](https://git-scm.com/downloads) (I recommend the command line NOT GUI)
 
