@@ -102,16 +102,16 @@
         }
       }
       .add {
-        background: #761fa1;
+        background: #157d42;
         color: #fff;
-        border-color: #761fa1;
+        border-color: #157d42;
         text-transform: uppercase;
         letter-spacing: 1px;
         &:hover {
           background: #9527cc;
         }
         &:after {
-          content: ' to /r/FortniteBR';
+          content: ' Naar /r/XboxNederland';
           text-transform: none;
         }
       }
@@ -247,16 +247,16 @@
     h3, h2 {
       text-align: center;
       padding: 8px;
-      border-bottom: solid 3px #761fa1;
-      border-top: solid 3px #761fa1;
-      color: #761fa1;
+      border-bottom: solid 3px #157d42;
+      border-top: solid 3px #157d42;
+      color: #157d42;
     }
   }
   .morelink {
     background: #fff;
     box-shadow: 0 0 2.75px 0.25px rgba(0, 0, 0, 0.2);
     border: none;
-    border-left: 4px solid #761fa1;
+    border-left: 4px solid #157d42;
     text-align: center;
     font-size: 14px;
     height: auto;
@@ -267,7 +267,7 @@
     a {
       display: inline-block;
       padding: 15px 10px;
-      color: #761fa1;
+      color: #157d42;
       text-transform: uppercase;
       text-decoration: none;
       box-sizing: border-box;
@@ -556,9 +556,9 @@
     padding: 0 35px;
     height: 48px;
     font-weight: 700;
-    color: #761fa1;
+    color: #157d42;
     line-height: 50px;
-    border-left: 4px solid #761fa1;
+    border-left: 4px solid #157d42;
   }
   table {
     &:first-of-type {
@@ -618,7 +618,7 @@
       }
       a {
         background-position: right 2px center;
-        color: #761fa1;
+        color: #157d42;
         border-radius: 5px;
         pointer-events: all;
         font-size: 12px;
@@ -630,7 +630,7 @@
         text-decoration: none;
         border: 1px solid #EEE;
         background-color: #fdfdfd;
-        border-left: 4px solid #761fa1;
+        border-left: 4px solid #157d42;
         &:hover {
           background-color: #f6f6f6;
         }
