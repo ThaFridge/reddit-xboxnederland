@@ -1,0 +1,55 @@
+.footer-parent {
+	background: #1d1d1d url(%%footerbg%%) top center no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	padding-top: 0;
+	.footer.rounded {
+		padding-top: 140px;
+		border: none;
+		margin-bottom: 30px;
+	}
+	.flat-vert.title {
+		color: $purple;
+	}
+	li a {
+		color: white;
+		font-size: 14px;
+	}
+	.col {
+		border: none;
+	}
+	.buygold {
+		color: $purple;
+	}
+	.bottommenu {
+		color: #bbbbbb;
+		margin-bottom: 5px;
+		font-size: 12px;
+		a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.updated {
+			color: white;
+		}
+	}
+}
+
+// Extra stuff at bottom
+#hsts_pixel {
+	display: none;
+}
+.debuginfo {
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	margin: 0;
+	padding: 4px;
+	.content {
+		margin: 0;
+		background: none;
+	}
+}

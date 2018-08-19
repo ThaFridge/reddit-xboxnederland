@@ -1,0 +1,331 @@
+.content {
+    margin: 84px 340px 20px 20px;
+    margin-right: 340px;
+
+    .thing {
+        background: white;
+
+        &:not(.reddit-link) {
+            border: solid;
+            border-width: 0 2px;
+            border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+        }
+
+        &.linkflair::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            border-right: 4px solid;
+            opacity: 0.6;
+        }
+
+        &.stickied:first-child:after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid #EEE;
+            margin: 16px -16px -20px;
+        }
+
+        &:not(.stickied):not(.promoted):not(.reddit-link):after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid #EEE;
+            margin: 16px -16px -20px;
+        }
+
+        &:not(.stickied):not(.reddit-link):nth-last-child(2) {
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .link {
+        padding: 20px;
+        margin-bottom: 0;
+
+        .tagline {
+            .flair {
+                display: none;
+            }
+
+            .userattrs {
+                &:before {
+                    display: none !important;
+                }
+            }
+        }
+
+        .entry .tagline .userattrs {
+            visibility: hidden;
+
+            .moderator {
+                background: $purple;
+                color: white;
+                font-size: 9px;
+                font-weight: bold;
+                padding: 2px 5px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .moderator, .cakeday {
+                visibility: visible;
+            }
+        }
+
+        .usertext-body .md {
+            border: 1px solid #E2E2E2;
+        }
+
+        .redditSingleClick {
+            color: #ccc;
+            font-weight: normal;
+        }
+
+        &.thing .title {
+            color: $blue;
+            font-size: 18px;
+
+            &:visited {
+                color: $grey;
+            }
+        }
+
+        &.last-clicked {
+            // Last clicked link
+            overflow: visible;
+        }
+
+        .rank {
+            display: none;
+        }
+
+        .thumbnail {
+            margin: 8px 20px 0;
+            max-height: 64px;
+        }
+
+        .title {
+            margin-bottom: 5px;
+        }
+
+        &:not(.stickied) .entry {
+            margin: 0;
+            padding: 0;
+
+            .buttons li a {
+                //color: rgba(152, 171, 186, 0.25);
+
+                &:hover {
+                    color: rgba(152, 171, 186, 0.75);
+                    transition: none;
+                }
+            }
+        }
+
+        .tagline {
+            font-size: 12px;
+            color: #999999;
+            margin-bottom: 5px;
+        }
+
+        .flat-list.buttons {
+            clear: both;
+            font-size: 12px;
+
+            li a {
+                font-weight: normal;
+            }
+
+            li.first a {
+                color: $blue;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .spacer {
+        margin: 0;
+    }
+
+    #noresults {
+        padding: 20px;
+        margin-right: 0;
+        background: url(%%noresults%%) center center no-repeat;
+        text-indent: -9999px;
+        overflow: hidden;
+        font-size: 0;
+        width: 100%;
+        height: 312px;
+    }
+
+    .menuarea {
+        border: none !important;
+        background: white;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-bottom: 20px;
+        box-shadow: $shadow;
+    }
+
+    .menuarea, .panestack-title {
+        font-size: 14px;
+        text-transform: capitalize;
+        padding: 10px;
+        border-bottom: 1px dotted #ccc;
+
+        .title {
+            font-size: 14px;
+        }
+    }
+
+    .nav-buttons {
+        padding: 15px;
+        font-size: 12px;
+        text-transform: capitalize;
+
+        a {
+            background-color: $purple;
+            color: white;
+            font-size: 12px;
+            font-weight: normal;
+            text-transform: uppercase;
+            border: none;
+            padding: 9px 15px;
+            transition: background-color 0.2s;
+            outline: none;
+            cursor: pointer;
+            border-radius: 0;
+
+            &:hover {
+                background-color: lighten($purple, 10%);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .organic-listing {
+        margin-bottom: 20px;
+        border: none;
+
+        .link {
+            padding-left: 20px;
+            background-color: white;
+            border-top: 2px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .subreddit-rules-page {
+        padding-top: 75px;
+
+        &:before {
+            top: 75px;
+        }
+    }
+
+    .newsletterbar {
+        background-color: #FFF;
+        box-shadow: $shadow;
+        margin-bottom: 19px;
+
+        h2 {
+            color: #999;
+        }
+
+        button {
+            color: $purple;
+            border: none;
+        }
+    }
+}
+
+body {
+  &.hot-page {
+    .thing.stickied {
+      margin-bottom: 20px;
+      a.title {
+        color: #761fa1;
+        &:visited {
+          color: #761fa1;
+        }
+      }
+      .flat-list.buttons li.first a, .entry .buttons li a {
+        color: #761fa1;
+      }
+      .stickied-tagline {
+        color: #999;
+      }
+      &.odd {
+        border-top: 2px solid rgba(0, 0, 0, 0.1);
+      }
+      + :not(.stickied) + :not(.stickied) {
+        box-shadow: 0 -1px 12px -3px rgba(0, 0, 0, 0.2);
+      }
+      &.linkflair::before {
+        color: #761fa1;
+        opacity: 1;
+      }
+    }
+    .stickied + {
+      .stickied, div + .stickied {
+        margin-top: -20px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  &:not(.hot-page) .sitetable .thing:first-child {
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+// RES Changes
+
+.link {
+    position: relative;
+
+    .RES-keyNav-activeElement,
+    .RES-keyNav-activeElement .md-container {
+        background: none !important;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 10px;
+            height: 9px;
+            background: url(%%spritesheet%%);
+            background-position: -45px -5px;
+        }
+    }
+}
+
+.content .RESBigEditorPop {
+    text-indent: 0;
+    overflow: visible;
+    font-size: 0;
+    width: auto;
+    height: auto;
+    border: none;
+    margin-left: 10px;
+    padding: 0;
+    background-color: transparent !important;
+    color: $foreground;
+}
+
+body {
+    .entry.res-selected, .entry.res-selected .md-container {
+        background-color: #FFFFFF00 !important;
+    }
+
+    .NERPageMarker {
+        background: white;
+        border-color: $purple;
+        color: $purple;
+        border-radius: 0px;
+    }
+}

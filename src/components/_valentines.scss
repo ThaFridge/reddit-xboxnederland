@@ -1,0 +1,53 @@
+#header {
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    display: block;
+    background-image: url("%%movinghearts%%");
+    position: absolute;
+    top: -150px;
+    left: -50%;
+    min-width: 2400px;
+    height: 1200px;
+    width: 200vw;
+    transform: translateX(-300px) translateY(-300px);
+    animation: snowfall 30s linear infinite;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    opacity: 0.6;
+  }
+
+  #sr-header-area {
+    z-index: 2;
+  }
+
+  #header-bottom-left {
+    z-index: 2;
+  }
+
+  #header-bottom-right {
+    z-index: 2;
+  }
+
+  #header-img {
+    // USE WITH EMBLEM_VALENTINES
+    margin-top: -40px !important;
+  }
+}
+
+body {
+  overflow-x: hidden !important;
+
+  .side .subscribers .word:before {
+    content: "at Lonely Lodge";
+    font-size: 16px;
+    position: relative;
+  }
+}
+@keyframes snowfall {
+  to {
+    transform: none;
+  }
+}

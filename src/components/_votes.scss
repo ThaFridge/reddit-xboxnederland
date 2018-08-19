@@ -1,0 +1,34 @@
+.arrow {
+	width: 20px;
+	height: 20px;
+	margin: 4px 0;
+	background-image: url(%%spritesheet%%) !important;
+	&.up {
+		background-position: 0 0;
+	}
+	&.down {
+		background-position: 0 -20px;
+	}
+	&.upmod {
+		background-position: -20px 0;
+	}
+	&.downmod {
+		background-position: -20px -20px;
+	}
+}
+
+.link .score {
+	&.likes {
+		color: $upvote
+	}
+
+	&.dislikes {
+		color: $downvote
+	}
+
+	max-width: 21px;
+}
+
+.comment .midcol {
+	min-width: 20px !important;
+}

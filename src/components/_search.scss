@@ -1,0 +1,32 @@
+#search {
+	position: absolute;
+	top: 318px;
+	z-index: 1337;
+	background: $purple;
+	&:before {
+		content: "";
+		width: 1px;
+		height: 30px;
+		position: absolute;
+		background: white;
+		display: inline-block;
+		left: 0;
+		top: 0;
+	}
+	input[type="text"] {
+		background: none;
+		border: none;
+		outline: none;
+		color: white;
+		padding-left: 20px;
+	}
+	#searchexpando {
+		background: white;
+		margin-top: 13px;
+		border-radius: 0;
+		box-shadow: $shadow;
+		border: 1px solid $dark-grey;
+		transition-duration: 0;
+	}
+
+}

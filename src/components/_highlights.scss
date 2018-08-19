@@ -1,0 +1,41 @@
+.content {
+	.thing .tagline .author.moderator {
+		background-color: $green !important;
+		color: white;
+		padding: 2px 4px;
+		border-radius: 0;
+		font-weight: bold;
+		&:hover {
+			background: lighten($green, 10%) !important;
+		}
+	}
+	.thing .tagline .author.submitter {
+		background-color: $blue !important;
+		color: white;
+		padding: 2px 4px;
+		border-radius: 0;
+		font-weight: bold;
+		&:hover {
+			background: lighten($blue, 10%) !important;
+		}
+	}
+    .thing .tagline .author.friend {
+		background-color: $red !important;
+		color: white;
+		padding: 2px 4px;
+		border-radius: 0;
+		font-weight: bold;
+		&:hover {
+			background: lighten($red, 10%) !important;
+		}
+	}
+	.thing .tagline .author {
+		display: inline-block;
+		color: #777;
+		font-weight: bold;
+	}
+
+	.thing .tagline .voteWeight {
+		margin-right: 3px;
+	}
+}

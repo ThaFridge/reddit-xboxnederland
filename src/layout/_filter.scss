@@ -1,0 +1,71 @@
+.side .md p {
+  &:nth-child(n+10):nth-child(-n+16) > a {
+    display: block;
+    position: relative;
+    font-size: 1.1428571428571428em;
+    margin-top: 4px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    border: 1px solid #ddd;
+    border-left: 4px solid #761fa1;
+    color: #761fa1;
+    text-decoration: none;
+    background-image: url(%%flair-icons%%);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    height: 20px;
+    &:hover {
+      border: 1px solid #999;
+      border-left: 4px solid #761fa1;
+      text-decoration: none;
+    }
+  }
+  &:nth-child(10) a {
+    background-position: 0 -142px;
+  }
+  &:nth-child(11) a {
+    background-position: 0 -35px;
+  }
+  &:nth-child(12) a {
+    background-position: 0 -107px;
+  }
+  &:nth-child(13) a {
+    background-position: 0 -178px;
+  }
+  &:nth-child(14) a {
+    background-position: 0 -250px;
+  }
+  &:nth-child(15) a {
+    background-position: 0 -357px;
+  }
+  &:nth-child(16) a {
+    background-position: 0 -72px;
+  }
+}
+
+html {
+  &:lang(fn-00) .link:not(.linkflair-epic), &:lang(fn-01) .link:not(.linkflair-bug), &:lang(fn-02) .link:not(.linkflair-discussion):not(.linkflair-suggestion), &:lang(fn-03) .link:not(.linkflair-help), &:lang(fn-04) .link:not(.linkflair-media):not(.linkflair-streamer), &:lang(fn-05) .link:not(.linkflair-creative), &:lang(fn-06) .link:not(.linkflair-humor) {
+    display: none;
+  }
+  &:lang(fn) .side .md p:nth-child(37) {
+    display: block !important;
+    a {
+      content: "";
+      z-index: 100;
+      position: absolute;
+      top: 278px;
+      left: 130px;
+      background: url(%%logo%%) no-repeat left center;
+      width: 175px;
+      height: 106px;
+      background-size: 90%;
+      text-indent: -1999px;
+      overflow: hidden;
+    }
+  }
+}
+
+.side .md p:nth-child(37) {
+  display: none;
+}

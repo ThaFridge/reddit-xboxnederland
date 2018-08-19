@@ -1,0 +1,74 @@
+.content {
+	.stickied .expando-button:hover {
+		background-color: $purple;
+	}
+    .md .expando-button {
+        margin-left: 5px;
+    }
+	.expando-button {
+		border: 1px solid #e9e9e9;
+		border-radius: 50%;
+		background-image: url(%%spritesheet%%) !important;
+
+		width: 16px !important;
+		height: 16px !important;
+		margin: 0 6px 0 0;
+		position: relative;
+		cursor: pointer;
+		&:hover {
+			background-color: $blue;
+			border-color: $blue;
+			text-decoration: none;
+		}
+		&.selftext.expanded, &.image.expanded, &.video.expanded, &.video-muted.expanded {
+			background-position: -22px -42px;
+			&:hover {
+				background-position: -22px -62px;
+			}
+		}
+		&.selftext.collapsed {
+			background-position: -2px -42px;
+			&:hover {
+				background-position: -2px -62px;
+			}
+		}
+		&.image.collapsed {
+			background-position: -82px -42px;
+			&:hover {
+				background-position: -82px -62px;
+			}
+		}
+		&.image.gallery.collapsed {
+			background-position: -61px -42px;
+			&:hover {
+				background-position: -61px -62px;
+			}
+		}
+		&.video.collapsed, &.video-muted.collapsed {
+			background-position: -42px -42px;
+			&:hover {
+				background-position: -42px -62px;
+			}
+		}
+	}
+}
+.btn, button {
+    background-color: $purple;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    padding: 9px 15px;
+    transition: background-color 0.2s;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background-color: lighten($purple, 10%);
+    }
+    a {
+        color: white;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

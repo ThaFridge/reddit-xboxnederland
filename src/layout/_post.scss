@@ -1,0 +1,21 @@
+.comments-page {
+	.link .usertext-body .md {
+		font-family: Verdana, sans-serif;
+		border: none;
+		background: none;
+		border-radius: 0;
+		padding: 10px 0;
+		margin: 10px 0;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+}
+
+//FIX FOR STRETCHED 'EXPAND POST' BUTTON
+
+.expando-button {
+	background-size: auto !important;
+}
+.expando-button-collapsed.selftext {
+	background-size: auto;
+}

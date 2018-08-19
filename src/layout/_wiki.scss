@@ -1,0 +1,48 @@
+.wiki-page {
+  .content {
+    background: none;
+    box-shadow: none;
+  }
+  .wikititle {
+    display: none;
+  }
+  .pageactions {
+    margin: 0 0 15px;
+    border: none;
+    border-radius: 0;
+    .wikiaction {
+      border-radius: 0;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .wiki-page-content {
+    margin: 0;
+    background: #fff;
+    box-shadow: 0 0 2.75px 0.25px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    .wiki > .toc > ul {
+      border: 1px dotted #999;
+    }
+    h1:first-of-type {
+      margin-top: 0;
+    }
+    .wiki.md {
+      font-family: Verdana,sans-serif;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.md table {
+  tbody > tr > td:nth-child(3) {
+    background: url(%%battlepoints%%) no-repeat;
+    background-position: left;
+    background-size: 18px;
+    text-indent: 15px;
+  }
+  thead tr th {
+    border: none;
+  }
+}

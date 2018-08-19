@@ -1,0 +1,17 @@
+{
+  "name": "fortnitebr",
+  "version": "2.5.2",
+  "private": true,
+  "description": "/r/FortniteBR CSS",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-csso": "*",
+    "gulp-sass": "*",
+    "gulp-concat-css": "*"
+  },
+  "author": " maintained by /u/MCiLuZiioNz",
+  "license": "ISC"
+}

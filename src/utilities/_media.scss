@@ -1,0 +1,23 @@
+//Fixes for various screen sizes and ratios
+
+@media screen and (min-width: 1920px) {
+  #header::before {
+    background-size: 100vw !important;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .side .md > table a {
+    font-size: 11px !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .side .md > table a {
+    font-size: 9px !important;
+    padding: 2px 4px !important;
+  }
+}

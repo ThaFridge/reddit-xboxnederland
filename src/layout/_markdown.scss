@@ -1,0 +1,11 @@
+.md {
+	hr {
+		height: 1px;
+		background: #ccc;
+		margin: 15px 0;
+	}
+}
+
+.md-container-small .md .-text, .side .md .-text, .md-container-small .md p, .side .md p, .md-container-small .md pre>code, .side .md pre>code, .md-container-small .md th, .side .md th, .md-container-small .md td, .side .md td, .md-container-small .md li, .side .md li {
+	line-height: 1.5em;
+}
