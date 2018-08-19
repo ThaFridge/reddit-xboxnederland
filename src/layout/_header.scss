@@ -28,7 +28,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    background: $gray;
+    background: $dark-grey;
     color: #cccccc;
     font-size: 10px;
     border: none;
@@ -66,7 +66,7 @@
     	}
 
         a.choice {
-            background-color: $gray;
+            background-color: $dark-grey;
             color: white;
 
             &:hover {
