@@ -1,3 +1,4 @@
 # gitignore r/xboxnederland
 /node_modules*
 /css*
+.DS_Store
