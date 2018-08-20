@@ -38,6 +38,20 @@
   }
 }
 
+.linkflair-xbnl {
+  background: #fff url(%%xbnl-linkflair%%) center right no-repeat !important;
+  .linkflairlabel {
+    background: #000;
+  }
+  .thumbnail {
+    background-position: 0 -100px;
+  }
+  &:before {
+    color: #000;
+    opacity: 1 !important;
+  }
+}
+
 .linkflair-announcement {
   .linkflairlabel {
     background: #761fa1;
