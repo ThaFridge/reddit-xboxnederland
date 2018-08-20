@@ -76,6 +76,18 @@
   }
 }
 
+.linkflair-gamescom {
+  .linkflairlabel {
+    background: #add8e6;
+    &:hover {
+      background: #add8e6;
+    }
+  }
+  .thumbnail {
+    background-position: 0 -50px;
+  }
+}
+
 .linkflair-devdiscussion .thumbnail {
   background-position: 0 -50px;
 }
