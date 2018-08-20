@@ -1,4 +1,4 @@
-# Fortnite Battle Royale subreddit theme contribution
+# XboxNederland subreddit theme contribution
 
 This file will give you guidelines on how to contribute if you want to, and will list known contributors to this repo.
 
