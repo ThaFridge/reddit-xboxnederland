@@ -7,7 +7,7 @@
         background: #000 url(%%header%%) no-repeat;
         display: block;
         background-size: cover !important;
-        background-position: top center;
+        background-position: left center;
         height: $header-height;
     }
 
@@ -70,7 +70,7 @@
             color: white;
 
             &:hover {
-                background-color: $highlight;
+                background-color: white;
             }
         }
     }

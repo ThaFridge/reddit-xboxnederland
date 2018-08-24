@@ -260,7 +260,7 @@ form .spacer + .spacer {
     width: 100%;
     display: block;
     margin: 0 auto;
-    background-color: #761fa1;
+    background-color: #54a81b;
     color: #fff;
     font-size: 12px;
     text-transform: uppercase;
@@ -284,19 +284,19 @@ form .spacer + .spacer {
 }
 
 .linefield .title, .roundfield, .submit_text h1 {
-  color: #761fa1 !important;
+  color: #54a81b !important;
   text-transform: capitalize;
 }
 
 .usertext {
   .help-toggle a, a.reddiquette {
-    color: #761fa1 !important;
+    color: #54a81b !important;
     text-transform: capitalize;
   }
 }
 
 .required-roundfield:before {
-  color: #761fa1 !important;
+  color: #54a81b !important;
   text-transform: capitalize;
 }
 
@@ -339,7 +339,7 @@ form .spacer + .spacer {
     margin-top: 15px;
     a[href*="#tag-"] {
       background-position: right 2px center;
-      color: #761fa1;
+      color: #54a81b;
       border-radius: 5px;
       font-size: 12px;
       line-height: 17px;
@@ -348,7 +348,7 @@ form .spacer + .spacer {
       text-decoration: none;
       border: 1px solid #EEE;
       background-color: #fdfdfd;
-      border-left: 4px solid #761fa1;
+      border-left: 4px solid #54a81b;
     }
     th {
       font-size: 0;

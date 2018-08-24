@@ -3,12 +3,12 @@
     margin-right: 340px;
 
     .thing {
-        background: white;
+        background: rgba(61,61,61,1);
 
         &:not(.reddit-link) {
             border: solid;
             border-width: 0 2px;
-            border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+            border-color: rgba(62,62,62,1);
         }
 
         &.linkflair::before {
@@ -237,13 +237,13 @@ body {
     .thing.stickied {
       margin-bottom: 20px;
       a.title {
-        color: #761fa1;
+        color: $green;
         &:visited {
-          color: #761fa1;
+          color: $green;
         }
       }
       .flat-list.buttons li.first a, .entry .buttons li a {
-        color: #761fa1;
+        color: $green;
       }
       .stickied-tagline {
         color: #999;
@@ -255,7 +255,7 @@ body {
         box-shadow: 0 -1px 12px -3px rgba(0, 0, 0, 0.2);
       }
       &.linkflair::before {
-        color: #761fa1;
+        color: $green;
         opacity: 1;
       }
     }
